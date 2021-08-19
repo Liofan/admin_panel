@@ -1,0 +1,40 @@
+-> % ls
+admin_panel  contract  cron.txt  db.sqlite3  generated_doc.docx  manage.py  requirements.txt  static  staticfiles  venv
+(venv) liofan@MD14 [00:22:39] [~/Документы/admin_panel]
+-> % python -V
+Python 3.9.6
+(venv) liofan@MD14 [00:22:46] [~/Документы/admin_panel]
+-> % python manage.py makemigrations
+
+
+
+
+============================================================================================================
+
+pip install requirements.txt
+
+manage.py makemigrations
+manage.py migrate
+manage.py collectstatic
+
+
+
+на данный момент стоит python2.7
+
+
+[p571782@h9 students.academy-barista.ru]$ pwd
+/home/p571782/www/students.academy-barista.ru
+
+[p571782@h9 students.academy-barista.ru]$ ./manage.py makemigrations
+-bash: ./manage.py: Отказано в доступе
+
+
+[p571782@h9 students.academy-barista.ru]$ python ./manage.py makemigrations
+  File "./manage.py", line 17
+    ) from exc
+         ^
+SyntaxError: invalid syntax
+
+
+
+https://habr.com/ru/post/551864/  --- комменты к статье меня позабавили ))
