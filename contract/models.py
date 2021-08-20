@@ -17,7 +17,7 @@ class Contract(models.Model):
     passport = models.CharField('Номер Паспорта', max_length=100)
     address = models.CharField('Адрес', max_length=100)
     tel = models.CharField('Номер Телефона', max_length=100)
-    contract_number = models.TextField('Коментарии', max_length=10000)
+    comments = models.TextField('Коментарии', max_length=10000, null=True)
 
     created_at = models.DateTimeField(verbose_name='Дата создания', auto_now_add=True, null=True)
     updated_at = models.DateTimeField(auto_now=True)
